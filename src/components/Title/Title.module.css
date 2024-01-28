@@ -1,0 +1,11 @@
+.title {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.titleText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #4d5ae5;
+}
