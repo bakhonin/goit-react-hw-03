@@ -9,7 +9,9 @@ const userSchema = Yup.object().shape({
     .min(3, 'Name must be at least 3 symb long')
     .max(50, 'The name must be no more than 50 characters long.')
     .required('This is a required field'),
-  number: Yup.string().required('This is a required field'),
+  number: Yup.string()
+    .min(7, 'Your phone number must contain 7 digits')
+    .required('This is a required field'),
 });
 
 export const ContactForm = ({ onAdd }) => {
